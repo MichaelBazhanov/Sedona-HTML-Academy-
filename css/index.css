@@ -26,13 +26,17 @@ body {
   color: var(--black);
 }
 
+.visually-hidden {
+  /* Скрывает видимую часть блока */
+}
+
 .title {
   font-size: 30px;
   line-height: 36px;
   font-weight: bold;
 }
 
-.sub-title {
+.sub-text {
   font-size: 22px;
   line-height: 36px;
   font-weight: 400;
