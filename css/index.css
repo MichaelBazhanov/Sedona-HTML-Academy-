@@ -1,4 +1,5 @@
 :root {
+  /* Colors */
   --black: #000000;
   --dark: #333333;
   --gray: #e5e5e5;
@@ -18,12 +19,34 @@
   --error: #ff5757;
   --warning: #fd922e;
   --success: #7db550;
+
+  /* Fonts */
+  --font-family: "PT Sans", "Arial", sans-serif;
+}
+
+@font-face {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/PT-Sans/PT-Sans-400.woff2);
+}
+
+@font-face {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/PT-Sans/PT-Sans-700.woff2);
 }
 
 body {
   margin: 0;
   padding: 0;
-  color: var(--black);
+  color: var(--dark);
+  font-family: var(--font-family);
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .visually-hidden {
