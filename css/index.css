@@ -1,25 +1,4 @@
 :root {
-  /* Colors */
-  /* --black: #000000;
-  --dark: #333333;
-  --gray: #e5e5e5;
-  --light: #f2f2f2;
-  --white: #ffffff;
-
-  --warm-light: #756257;
-  --neutral-light: #7db54f;
-  --cold-light: #83b3d3;
-  --cold-light02: hsl(204 48% 67% / 0.2);
-
-  --warm-dark: #615048;
-  --neutral-dark: #6c9e42;
-  --cold-dark: #68a2ca;
-  --cool-light012: hsl(204 48% 67% / 0.12);
-
-  --error: #ff5757;
-  --warning: #fd922e;
-  --success: #7db550; */
-
   --status-success: #7db550;
   --status-warning: #fd922e;
   --status-error: #ff5757;
@@ -67,20 +46,24 @@ body {
   line-height: 21px;
 }
 
-.visually-hidden {
-  /* Скрывает видимую часть блока */
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
 }
-
 .title {
+  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  font-weight: bold;
+  text-transform: uppercase;
 }
-
-.sub-text {
-  font-size: 22px;
-  line-height: 36px;
+.text {
   font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
 }
 
 /* Pages */
@@ -116,18 +99,104 @@ body {
 }
 
 /* advantages */
+.advantages {
+  text-align: center;
+}
 .lid {
   font-weight: 700;
   font-size: 30px;
-
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
   color: var(--basic-black);
 }
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
 .advantages-text {
   font-size: 22px;
   line-height: 36px;
+  font-weight: 400;
+}
+.advantages-number {
+  text-transform: uppercase;
+}
+.advantages-item:nth-child(1),
+.advantages-item:nth-child(5) {
+  color: var(--basic-white);
+  background-color: var(--special-cold-light);
+}
+.advantages-item:nth-child(3) {
+  background-color: var(--basic-white);
+}
+.advantages-item:nth-child(7) {
+  background-color: var(--special-cold-light20);
+}
+.advantages-item:nth-child(2),
+.advantages-item:nth-child(4),
+.advantages-item:nth-child(6),
+.advantages-item:nth-child(8) {
+  background-color: var(--special-cold-light12);
+}
+.advantages-item:nth-child(2) .advantages-title,
+.advantages-item:nth-child(3) .advantages-title,
+.advantages-item:nth-child(4) .advantages-title,
+.advantages-item:nth-child(6) .advantages-title,
+.advantages-item:nth-child(7) .advantages-title,
+.advantages-item:nth-child(8) .advantages-title {
+  color: var(--basic-black);
+}
+
+/* booking */
+.booking {
   text-align: center;
-  color: var(--basic-dark);
+}
+.booking-title {
+  color: var(--basic-black);
+}
+.booking-text {
+}
+.booking-link {
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  text-decoration: none;
+  width: 100%;
+  max-width: 575px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: var(--special-warm-light);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* newsletter */
+.newsletter {
+  text-align: center;
+  background-color: var(--basic-white);
+  background-image: url("../img/images-decorative/background-newsletter.jpg");
+}
+.newsletter-title,
+.newsletter-text {
+  color: var(--basic-white);
+}
+.newsletter-form {
+}
+.newsletter-button {
+  background-color: var(--special-cold-light);
+}
+/* footer-page */
+.footer-tel {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--basic-black);
 }
