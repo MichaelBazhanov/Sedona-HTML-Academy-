@@ -15,11 +15,9 @@
   --special-neutral-dark: #6c9e42;
   --special-warm-dark: #615048;
   --special-warm-light: #756257;
-
   /* Fonts */
   --font-family: "PT Sans", "Arial", sans-serif;
 }
-
 @font-face {
   font-family: var(--font-family);
   font-style: normal;
@@ -27,7 +25,6 @@
   font-display: swap;
   src: url(../fonts/PT-Sans/PT-Sans-400.woff2);
 }
-
 @font-face {
   font-family: var(--font-family);
   font-style: normal;
@@ -35,7 +32,6 @@
   font-display: swap;
   src: url(../fonts/PT-Sans/PT-Sans-700.woff2);
 }
-
 body {
   margin: 0;
   padding: 0;
@@ -45,7 +41,6 @@ body {
   font-size: 18px;
   line-height: 21px;
 }
-
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
   height: 1px;
@@ -65,29 +60,6 @@ body {
   font-size: 22px;
   line-height: 26px;
 }
-
-/* Pages */
-
-.page-header {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
-  color: var(--basic-black);
-}
-
-.navigation-list,
-.navigation-user-list {
-  list-style: none;
-}
-
-.navigation-link {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
-  color: inherit;
-  text-decoration: none;
-}
-
 .button {
   font-weight: 700;
   font-size: 16px;
@@ -97,7 +69,37 @@ body {
   color: var(--basic-white);
   border: none;
 }
-
+/* Header */
+.page-header {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+.navigation-list,
+.navigation-user-list {
+  list-style: none;
+}
+.navigation-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: inherit;
+  text-decoration: none;
+}
+/* Footer */
+.footer-tel {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--basic-black);
+}
+/* ============================================== */
+/* ============================================== */
+/* ============================================== */
 /* advantages */
 .advantages {
   text-align: center;
@@ -149,7 +151,6 @@ body {
 .advantages-item:nth-child(8) .advantages-title {
   color: var(--basic-black);
 }
-
 /* booking */
 .booking {
   text-align: center;
@@ -190,13 +191,97 @@ body {
 .newsletter-button {
   background-color: var(--special-cold-light);
 }
-/* footer-page */
-.footer-tel {
+/* Catalog */
+.catalog-product {
+  line-height: normal;
+}
+.catalog-header {
+  line-height: normal;
+  color: var(--basic-white);
+  background-color: var(--basic-white);
+  background-image: url(../img/images-decorative/backgound-filter.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.catalog-header-title {
+  font-weight: 700;
+  font-size: 60px;
+}
+.breadcrumbs-link {
+  color: inherit;
   text-decoration: none;
   font-weight: 400;
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 16px;
+}
+/* catalog-filter */
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+}
+.control-label,
+.catalog-filter-input {
+  font-weight: 400;
+  font-size: 18px;
+}
+.catalog-filter-button[type="submit"] {
+  background: var(--special-cold-light);
+  padding: 14px 29px;
+}
+.catalog-filter-button[type="reset"] {
+  text-transform: none;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 18px;
+}
+.result-text {
+  font-weight: 700;
+  font-size: 30px;
   text-transform: uppercase;
-  text-align: center;
   color: var(--basic-black);
+  line-height: normal;
+}
+select[name="sorting"] {
+  font-weight: 400;
+  font-size: 18px;
+}
+.product-card-link {
+  text-decoration: none;
+}
+.product-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--basic-black);
+}
+.product-desc dt,
+.product-desc dd {
+  font-weight: 400;
+  font-size: 18px;
+}
+.product-action-link {
+  background-color: var(--special-warm-light);
+  text-decoration: none;
+  border-radius: 4px;
+  width: 133px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-action-button {
+  background-color: var(--special-cold-light);
+  border-radius: 4px;
+  width: 140px;
+  height: 37px;
+}
+.product-rating-result {
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  width: 160px;
+  height: 37px;
+  background: var(--basic-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
