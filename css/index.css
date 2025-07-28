@@ -68,6 +68,20 @@ body {
   text-align: center;
   color: var(--basic-white);
   border: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 4px;
+  font-family: inherit;
+}
+hr {
+  background-color: var(--basic-gray);
+  border: none;
+  height: 1px;
+}
+select {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 400;
 }
 /* Header */
 .page-header {
@@ -260,7 +274,6 @@ select[name="sorting"] {
 .product-action-link {
   background-color: var(--special-warm-light);
   text-decoration: none;
-  border-radius: 4px;
   width: 133px;
   height: 37px;
   display: flex;
@@ -269,7 +282,6 @@ select[name="sorting"] {
 }
 .product-action-button {
   background-color: var(--special-cold-light);
-  border-radius: 4px;
   width: 140px;
   height: 37px;
 }
@@ -277,11 +289,51 @@ select[name="sorting"] {
   font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
-  border-radius: 4px;
   width: 160px;
   height: 37px;
   background: var(--basic-light);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.product-show-all {
+  line-height: inherit;
+  font-size: 20px;
+  width: 100%;
+  max-width: 620px;
+  height: 60px;
+  background: var(--special-cold-light);
+  padding: 0;
+  cursor: pointer;
+}
+/* pagination */
+.pagination {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.pagination-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  font-size: 20px;
+  background-color: var(--special-cold-light);
+  text-decoration: none;
+}
+.pagination-current {
+  background: var(--basic-light);
+  color: var(--basic-black);
+}
+/*  */
+.page-inner .newsletter {
+  background-image: none;
+}
+.page-inner .newsletter-title {
+  color: var(--basic-black);
+}
+.page-inner .newsletter-text {
+  color: var(--basic-dark);
 }
